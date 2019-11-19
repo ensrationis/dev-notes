@@ -24,3 +24,15 @@
 Обновление конфигурации ОС. Для применения изменений необходио выполнить:
 
     nixos-rebuild switch
+
+**Добавление ssh rsa ключа из github.com**
+
+Для добавления ssh rsa ключа из github.com выполните следующие комманды:
+
+	mkdir /root/.ssh
+	chmod 700 /root/.ssh
+	curl https://github.com/your-username.keys -o  /root/.ssh/authorized_keys
+	chmod 600 .ssh/authorized_keys
+
+
+
