@@ -34,9 +34,7 @@
 	curl https://github.com/your-username.keys -o  /root/.ssh/authorized_keys
 	chmod 600 .ssh/authorized_keys
 
-
 **Запускаем и останавливаем cjdns**
-
 	sudo ./cjdroute < cjdroute.conf
 
 Если вы хотите записывать логи в файл, то:
@@ -50,6 +48,7 @@
 Если вы испытываете проблемы при использовании killall cjdroute. Используйте pgrep cjdroute или top для определения, запущен ли он.
 
 **Выводим на виртуальной машине лог узла робономики на субстрате**
+
 	journalctl -f -u robonomics.service 
 
 
