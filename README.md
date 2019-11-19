@@ -35,6 +35,7 @@
 	chmod 600 .ssh/authorized_keys
 
 **Запускаем и останавливаем cjdns**
+
 	sudo ./cjdroute < cjdroute.conf
 
 Если вы хотите записывать логи в файл, то:
