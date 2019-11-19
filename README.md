@@ -35,4 +35,21 @@
 	chmod 600 .ssh/authorized_keys
 
 
+**Запускаем и останавливаем cjdns**
+
+	sudo ./cjdroute < cjdroute.conf
+
+Если вы хотите записывать логи в файл, то:
+
+	sudo ./cjdroute < cjdroute.conf > cjdroute.log
+
+Остановка cjdns осуществляется следующим образом:
+
+	sudo killall cjdroute
+
+Если вы испытываете проблемы при использовании killall cjdroute. Используйте pgrep cjdroute или top для определения, запущен ли он.
+
+**Выводим на виртуальной машине лог узла робономики на субстрате**
+	journalctl -f -u robonomics.service 
+
 
