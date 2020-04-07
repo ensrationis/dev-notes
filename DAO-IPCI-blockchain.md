@@ -11,3 +11,5 @@
 `systemctl restart robonomics_ipci.service`
 
 `ssh -L 9944:localhost:9944 root@178.62.41.59`
+
+`./subkey -n robonomics -k transfer 0хPRIVATE 4G6w1MiMqQgbN4ntFDwCZmgCBSHNYzWiFLs1Re4FjXaR9wRk 1000000000000 0`
