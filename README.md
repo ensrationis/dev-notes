@@ -50,6 +50,10 @@
 
 **Выводим на виртуальной машине лог узла робономики на субстрате**
 
-	journalctl -f -u robonomics.service 
-
+	journalctl -f -u robonomics.service --since "10 min ago"
+	
+**Используем удаленную ноду, как localhost**
+	```
+	ssh -L 9944:localhost:9944 root@<ip облака>
+	```
 
